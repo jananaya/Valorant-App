@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrandComponent } from './components/brand/brand.component';
+import { IconComponent } from './components/icon/icon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BrandComponent
+    BrandComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
