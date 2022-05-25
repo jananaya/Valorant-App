@@ -2,6 +2,10 @@
     fill: #ffff;
 }
 
+.black {
+    fill: #000000;
+}
+
 svg:hover {
-    fill: #f01414;
+    fill: #e91e63;
 }
