@@ -1,0 +1,49 @@
+header, #icons-grid-tile, #input-grid-tile {
+    height: 65px;
+}
+
+#icons-grid-tile, #input-grid-tile {
+    width: 50%;
+}
+
+header {
+    background: #000000;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.icons {
+    margin-left: 10px;
+}
+
+app-brand,
+app-icon {
+    margin: 10px;
+}
+
+app-search-input {
+    float: right;
+}
+
+#icons-grid-tile {
+    float: left;
+}
+
+#input-grid-tile {
+    float: right;
+}
+
+app-search-input {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 440px) {
+    #icons-grid-tile, #input-grid-tile, app-search-input {
+       width: 100%;
+       float: none;
+    }
+
+    header {
+        height: 130px;
+    }
+}
