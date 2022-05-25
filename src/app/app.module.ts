@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SvgWrapperComponent } from './components/svg-wrapper/svg-wrapper.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SvgWrapperComponent
   ],
   imports: [
     BrowserModule,

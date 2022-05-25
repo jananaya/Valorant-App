@@ -1,0 +1,7 @@
+.white {
+    fill: #ffff;
+}
+
+svg:hover {
+    fill: #f01414;
+}
