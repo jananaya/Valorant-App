@@ -1,49 +1,48 @@
 header, #icons-grid-tile, #input-grid-tile {
-    height: 65px;
+  height: 58px;
 }
 
 #icons-grid-tile, #input-grid-tile {
-    width: 50%;
+  width: 50%;
 }
 
 header {
-    background: #000000;
-    padding: 0px;
-    padding-top: 5px;
+  background: #000000;
+  padding: 5px 0px 0px;
 }
 
 .icons {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 app-brand,
 app-icon {
-    margin: 10px;
+  margin: 10px;
 }
 
 app-search-input {
-    float: right;
+  float: right;
 }
 
 #icons-grid-tile {
-    float: left;
+  float: left;
 }
 
 #input-grid-tile {
-    float: right;
+  float: right;
 }
 
 app-search-input {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 440px) {
-    #icons-grid-tile, #input-grid-tile, app-search-input {
-       width: 100%;
-       float: none;
-    }
+  #icons-grid-tile, #input-grid-tile, app-search-input {
+    width: 100%;
+    float: none;
+  }
 
-    header {
-        height: 130px;
-    }
+  header {
+    height: 123px;
+  }
 }
