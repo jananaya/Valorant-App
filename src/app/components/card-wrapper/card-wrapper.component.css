@@ -1,0 +1,17 @@
+.gallery {
+  position: relative;
+}
+
+.gallery {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: dense;
+
+}
+
+@media screen and (max-width: 900px) {
+  .gallery {
+    grid-template-columns: 100%;
+  }
+}

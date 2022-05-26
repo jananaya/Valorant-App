@@ -12,9 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { CardWrapperComponent } from './components/card-wrapper/card-wrapper.component';
 import { WeaponCardComponent } from './components/weapon-card/weapon-card.component';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { WeaponCardComponent } from './components/weapon-card/weapon-card.compon
     IconComponent,
     HeaderComponent,
     SearchInputComponent,
+    CardWrapperComponent,
     WeaponCardComponent
   ],
   imports: [
