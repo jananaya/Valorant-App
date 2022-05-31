@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+* {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.div-card {
+  position: relative;
+  display: block;
+  padding: 0;
+}
+
+.front, .div-card {
+  min-height: var(--card-height);
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.back:hover {
+  background: gray;
+}
+
+.back {
+  --padding: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  height: calc(var(--card-height) - var(--padding));
+
+  padding: var(--padding);
+
+  background: rgba(233, 30, 98, 0.82);
+  color: #fff;
+
+  font-size: 14px;
+  text-align: justify;
+  transition: all .3s ease-out;
+}
+
+h4 {
+  text-transform: uppercase;
+}
