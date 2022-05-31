@@ -34,7 +34,6 @@ app-card-header {
 }
 
 @media screen and (max-width: 412px) {
-
   * {
     --card-height: auto;
   }
