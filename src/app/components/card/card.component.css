@@ -1,0 +1,56 @@
+* {
+  --card-height: 352px;
+}
+
+mat-card {
+  border: none;
+  border-radius: 0;
+  min-height: var(--card-height);
+}
+
+.mat-card-footer {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.mat-card-subtitle,
+.mat-card-footer {
+  color: #4e4e4e;
+}
+
+.mat-card-header-text,
+figure {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+app-card-header {
+  --card-height: 352px;
+  display: block;
+  height: calc(var(--card-height) * 0.2);
+}
+
+@media screen and (max-width: 412px) {
+
+  * {
+    --card-height: auto;
+  }
+}
+
+img {
+  --img-width: 100%;
+  height: calc(750px - 750px / var(--img-width));
+  width: var(--img-width);
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  filter: drop-shadow(1rem 1rem 0 rgba(15, 25, 35, .17));
+}
+
+app-card-header {
+  display: block;
+  height: calc(var(--card-height) * 0.2);
+}
