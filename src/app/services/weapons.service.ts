@@ -1,7 +1,7 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import Weapon from "../../types/Weapon";
+import Weapon from "../types/Weapon";
 
 type sortOption = 'specs' | 'category' | 'damage' | 'rateOfFire' | 'rating' | ''
 

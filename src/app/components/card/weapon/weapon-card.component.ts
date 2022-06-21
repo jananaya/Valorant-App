@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import Weapon from 'src/types/Weapon';
+import Weapon from 'src/app/types/Weapon';
 
 @Component({
   selector: 'app-weapon-card',
