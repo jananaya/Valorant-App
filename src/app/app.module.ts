@@ -15,8 +15,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { CardWrapperComponent } from './components/card-wrapper/card-wrapper.component';
-import { WeaponCardComponent } from './components/weapon-card/weapon-card.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { WeaponsService } from './services/weapons.service';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,7 @@ import { WeaponCardComponent } from './components/weapon-card/weapon-card.compon
     BrandComponent,
     IconComponent,
     HeaderComponent,
-    SearchInputComponent,
-    CardWrapperComponent,
-    WeaponCardComponent
+    SearchInputComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +36,12 @@ import { WeaponCardComponent } from './components/weapon-card/weapon-card.compon
     MatGridListModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    WeaponsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
