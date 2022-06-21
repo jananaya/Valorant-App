@@ -1,7 +1,7 @@
 .gallery {
   --border-width: 0.5px;
   position: relative;
-  background-color: gray;
+  background-color: rgba(255, 255, 255, 0.93);
   display: grid;
   gap: 0px;
   padding: var(--border-width);
