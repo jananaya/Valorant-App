@@ -1,0 +1,15 @@
+* {
+  width: 100%;
+}
+
+mat-form-field {
+  color: black;
+}
+
+.mat-form-field-flex {
+  background: rgb(255, 184, 215);
+}
+
+mat-option, mat-form-field {
+  text-transform: uppercase;
+}
