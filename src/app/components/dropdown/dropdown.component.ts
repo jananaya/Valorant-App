@@ -1,13 +1,20 @@
-import {Component, Input} from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })
-export class DropdownComponent {
+export class DropdownComponent implements OnInit {
   @Input() items: string[] = [];
   @Input() label = '';
   @Input() option = '';
-  selectedItem = '';
+  @Output() dropdownEvent = new EventEmitter<string>();
+
+  changeSelectedItem(item: string) {
+    this.dropdownEvent.emit(item);
+  }
+
+  ngOnInit(): void {
+  }
 }
