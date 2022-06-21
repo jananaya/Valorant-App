@@ -24,12 +24,11 @@
 }
 
 .back {
-  --padding: 20px;
   margin-top: 0;
   margin-left: 0;
-  height: calc(var(--card-height) - var(--padding));
+  height: calc(var(--card-height) - 8px);
 
-  padding: var(--padding);
+  padding: 20px;
 
   background: rgba(233, 30, 98, 0.82);
   color: #fff;
