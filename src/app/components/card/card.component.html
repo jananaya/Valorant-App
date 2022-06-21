@@ -1,0 +1,11 @@
+<mat-card [ngClass]="classes">
+  <div>
+    <app-card-header [headerText]="title"></app-card-header>
+    <figure>
+      <img mat-card-image draggable="false" [src]="imagePath" [alt]="imageAlt">
+    </figure>
+  </div>
+  <mat-card-footer>
+    {{brief}}
+  </mat-card-footer>
+</mat-card>

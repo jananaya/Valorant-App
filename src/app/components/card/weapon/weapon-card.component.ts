@@ -4,7 +4,10 @@ import Weapon from 'src/types/Weapon';
 @Component({
   selector: 'app-weapon-card',
   templateUrl: './weapon-card.component.html',
-  styleUrls: ['./weapon-card.component.css']
+  styleUrls: [
+    './weapon-card.component.css',
+    '../card.component.css'
+  ]
 })
 export class WeaponCardComponent {
 
@@ -22,10 +25,18 @@ export class WeaponCardComponent {
   };
 
   isMouseOver: boolean = false;
-  display = this.CSS_CLASS_TO_HIDE;
+  frontDisplay = '';
+  backDisplay = this.CSS_CLASS_TO_HIDE;
 
   changeDisplayValue() {
-    this.display = this.isMouseOver ? this.CSS_CLASS_TO_HIDE : '';
     this.isMouseOver = !this.isMouseOver;
+
+    if (this.isMouseOver) {
+      this.frontDisplay = this.CSS_CLASS_TO_HIDE;
+      this.backDisplay = '';
+    } else {
+      this.frontDisplay = '';
+      this.backDisplay = this.CSS_CLASS_TO_HIDE;
+    }
   }
 }

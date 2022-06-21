@@ -1,0 +1,22 @@
+<div class="div-card" (mouseleave)="changeDisplayValue()" (mouseenter)="changeDisplayValue()">
+  <app-card class="{{'front ' + frontDisplay}}" [imagePath]="data.imagePath" [title]="data.name"></app-card>
+
+  <div class="{{'back ' + backDisplay}}">
+    <app-card-header [headerText]="data.name">
+    </app-card-header>
+
+    <b>Tipo de arma:</b> {{data.category}}.
+    <h4>Características</h4>
+    <ul *ngFor="let spec of data.specs">
+      <li>{{spec}}</li>
+    </ul>
+    <h4>Estadísticas</h4>
+    <b>Daño:</b>
+    {{data.damage}}<br>
+    <b>Cadencia de tiro:</b>
+    {{data.rateOfFire}} <br>
+    <b>Valoración:</b>
+    {{data.rating}} <br>
+  </div>
+
+</div>

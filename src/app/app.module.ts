@@ -7,6 +7,10 @@ import { BrandComponent } from './components/brand/brand.component';
 import { IconComponent } from './components/icon/icon.component';
 import { SearchInputComponent } from './components/search-input/search-input.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CardWrapperComponent } from './components/card-wrapper/card-wrapper.component';
+import { CardHeaderComponent } from './components/card/header/card-header.component';
+import { CardComponent } from './components/card/card.component';
+import { WeaponCardComponent } from './components/card/weapon/weapon-card.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -26,7 +30,11 @@ import { WeaponsService } from './services/weapons.service';
     BrandComponent,
     IconComponent,
     HeaderComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    CardWrapperComponent,
+    CardHeaderComponent,
+    CardComponent,
+    WeaponCardComponent
   ],
   imports: [
     BrowserModule,

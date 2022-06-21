@@ -1,13 +1,16 @@
 .gallery {
+  --border-width: 0.5px;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.93);
+  display: grid;
+  gap: 0px;
+  padding: var(--border-width);
+  grid-template-columns: 50% 50%;
+  height: auto;
 }
 
-.gallery {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: 50% 50%;
-  grid-auto-flow: dense;
-
+span {
+  margin: var(--border-width);
 }
 
 @media screen and (max-width: 900px) {
