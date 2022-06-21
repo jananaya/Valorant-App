@@ -19,6 +19,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+
+import { WeaponsService } from './services/weapons.service';
 
 @NgModule({
   declarations: [
@@ -41,9 +44,12 @@ import { MatCardModule } from '@angular/material/card';
     MatGridListModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    WeaponsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
