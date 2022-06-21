@@ -10,14 +10,14 @@ import { WeaponsService } from '../../services/weapons.service';
 export class CardWrapperComponent implements OnInit {
   weapons: Weapon[] = [];
 
-  constructor(private weaponService: WeaponsService) {
-    weaponService.get().subscribe((res) => {
+  constructor(private weaponsService: WeaponsService) {
+    weaponsService.get().subscribe((res) => {
       this.weapons = res;
     });
   }
 
   ngOnInit(): void {
-    this.weaponService.weaponEmitter.subscribe((data) => {
+    this.weaponsService.weaponEmitter.subscribe((data) => {
       if (data instanceof Array) {
         this.weapons = data;
         return;
