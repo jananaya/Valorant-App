@@ -17,6 +17,7 @@
   height: 100px;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
+  color: rgba(233, 30, 98, 0.33);
 }
 
 .drop-downListDiv app-dropdown-categories {
